@@ -2,10 +2,23 @@ package main
 
 import (
 	"fmt"
-	"time"
 )
 
+type user struct {
+	name     string
+	password string
+}
+
+func (u user) checkPassword(password string) bool {
+	return u.password == password
+}
+
+func (u *user) resetPassword(password string) {
+	u.password = password
+}
+
 func main() {
-	fmt.Println("Hello World")
-	fmt.Println(time.Now())
+	a := user{name: "zheng", password: "123"}
+	a.resetPassword("456")
+	fmt.Println(a.checkPassword("456")) //true
 }
