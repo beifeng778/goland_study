@@ -1,3 +1,3 @@
-module golang_day1
+module golang_study
 
 go 1.19
