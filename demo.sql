@@ -31,7 +31,7 @@ CREATE TABLE `user`  (
 -- ----------------------------
 -- Records of user
 -- ----------------------------
-INSERT INTO `user` VALUES (1, '郑浩天', '123456');
+INSERT INTO `user` VALUES (1, '小明', '123456');
 INSERT INTO `user` VALUES (2, '张三', '111111');
 
 SET FOREIGN_KEY_CHECKS = 1;
